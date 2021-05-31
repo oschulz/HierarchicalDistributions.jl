@@ -3,5 +3,5 @@
 import Test
 
 Test.@testset "Package HierarchicalDistributions" begin
-    include("test_hello_world.jl")
+    #include("test_hierarchical_distribution.jl")
 end # testset

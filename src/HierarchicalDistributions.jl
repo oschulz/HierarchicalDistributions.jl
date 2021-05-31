@@ -10,6 +10,6 @@ Bayesian models with hierarchical priors.
 """
 module HierarchicalDistributions
 
-include("hello_world.jl")
+#include("hierarchical_distribution.jl")
 
 end # module
