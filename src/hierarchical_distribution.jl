@@ -178,7 +178,7 @@ end
     _split_nt(x, vsp)
 end
 
-@inline function _hd_split(d::HierarchicalDistribution{ValueShapes.NamedTupleVariate{names}}, x::ShapedAsNT{<:NamedTuple{names}}) where names
+@inline function _hd_split(d::HierarchicalDistribution{ValueShapes.NamedTupleVariate{names}}, x::ShapedAsNT{names}) where names
     x_primary_us, x_secondary_us = _hd_split(unshaped(d), x)
     varshape(d.pdist)(x_primary_us), d.secondary_vs(x_secondary_us)
 end
